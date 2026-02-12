@@ -1,7 +1,7 @@
 import React from 'react';
-import { Image, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 
-export default function LoginScreen() {
+/*export default function LoginScreen() {
   return (
     <View style={styles.container}>
    
@@ -34,7 +34,49 @@ export default function LoginScreen() {
       <Text style={styles.forgotPassword}>esqueceu a senha</Text>
     </View>
   );
+}*/
+/*export default function cadastro() {
+  return (
+    <View style={styles.container}>
+      <View style={styles.inputContainer}>
+        <Text style={styles.label}>Nome</Text>
+        <TextInput style={styles.input} placeholder="Digite seu nome" />
+      </View>
+
+       <View style={styles.inputContainer}>
+        <Text style={styles.label}>Email</Text>
+        <TextInput style={styles.input} placeholder="Digite seu email" />
+      </View>
+     
+      <View style={styles.inputContainer}>
+        <Text style={styles.label}>Senha</Text>
+        <TextInput style={styles.input} placeholder="Digite sua senha" secureTextEntry={true} />
+      </View>
+
+      <TouchableOpacity style={styles.buttonCadastrar}>
+        <Text style={styles.buttonText}>Cadastre-se</Text>
+      </TouchableOpacity>
+
+    </View>
+  );
+}*/
+export default function esqueceuSenha() {
+  return (
+    <View style={styles.container}>
+      
+      <View style={styles.inputContainer}>
+        <Text style={styles.label}>Email</Text>
+        <TextInput style={styles.input} placeholder="Digite seu email" />
+      </View>
+
+      <TouchableOpacity style={styles.buttonEnviar}>
+        <Text style={styles.buttonText}>Enviar</Text>
+      </TouchableOpacity>
+
+    </View>
+  );
 }
+
 
 const styles = StyleSheet.create({
   container: {
@@ -72,6 +114,14 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   buttonCadastrar: {
+    backgroundColor: '#2ecc71',
+    width: '100%',
+    padding: 15,
+    borderRadius: 15,
+    alignItems: 'center',
+    marginTop: 10,
+  },
+  buttonEnviar: {
     backgroundColor: '#2ecc71',
     width: '100%',
     padding: 15,
